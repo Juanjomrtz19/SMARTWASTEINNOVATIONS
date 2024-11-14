@@ -6,7 +6,15 @@ import Equipo from "./components/Equipo";
 export default function App() {
   return (
     <>
-      <section className="relative min-h-screen overflow-hidden">
+      <style>
+        {`
+          html, body {
+            overflow-x: hidden;
+          }
+        `}
+      </style>
+
+      <section className="relative min-h-screen w-full overflow-hidden">
         <video
           autoPlay
           loop
@@ -22,7 +30,7 @@ export default function App() {
 
         <NavBar />
         
-        <NavBarFixed fixed={true}/>
+        <NavBarFixed fixed={true} />
         <section className="relative w-full pt-48 flex justify-center items-center z-30 text-white text-5xl">
           <h1 className="font-bold">
             Tecnología y naturaleza, por un mundo mejor
@@ -35,4 +43,3 @@ export default function App() {
     </>
   );
 }
-

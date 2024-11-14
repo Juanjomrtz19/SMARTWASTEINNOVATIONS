@@ -7,6 +7,7 @@ import slide3 from '../assets/foto3.jpeg';
 import backgroundImage from '../assets/background-2076336.jpg';
 import { motion} from "framer-motion";
 import { useInView } from 'react-intersection-observer';
+import logoMarca from '../assets/logoMarca.png';
 
 const Equipo = () => {; 
   const { ref, inView } = useInView({
@@ -75,7 +76,7 @@ const Equipo = () => {;
         </button>
       </motion.div>
 
-      <motion.section className='flex flex-col max-w-lg gap-10'
+      <motion.section className='flex flex-col max-w-lg gap-10 items-center'
         initial={{ opacity: 0, x: 200 }}
         animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 200}}
         transition={{ duration: 1, type: "spring" }}
@@ -83,6 +84,9 @@ const Equipo = () => {;
       >
         <h2 className='text-2xl font-semibold'>Nos dedicamos a la creación de cubos ecológicos</h2>
         <p>DRUID es un sistema de contenedores inteligentes que detecta el nivel de llenado y alerta para optimizar la recolección, evitando desbordes y mejorando la eficiencia en la gestión de residuos urbanos.</p>
+        <section className='h-2/6 w-3/6 items-center'>
+            <img src={logoMarca} alt="" className='w-full h-full object-cover'/>
+        </section>
       </motion.section>
     </section>
   );

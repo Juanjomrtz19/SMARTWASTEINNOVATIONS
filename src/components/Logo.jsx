@@ -6,7 +6,7 @@ const Logo = ({ fixed }) => {
 
   useEffect(() => {
     if (fixed) {
-      setMasChico("h-20 w-20");
+      setMasChico("h-20 w-20 scale-150  ");
     } else {
       setMasChico("h-1/12 w-1/12");
     }
