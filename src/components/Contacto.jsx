@@ -36,7 +36,7 @@ const Contacto = () => {
 
     return(
         <>
-        <form onSubmit={handleSubmit} className="lg:w-3/6">
+        <form onSubmit={handleSubmit} className="lg:w-3/6 w-full p-4 lg:p-0">
         <Box gap={2} display="flex" flexDirection="column">
         {error && <Alert severity="error">{error}</Alert>}  {/* Mostrar alerta si hay error */}
         <TextField 
