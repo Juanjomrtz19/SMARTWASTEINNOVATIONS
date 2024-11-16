@@ -32,7 +32,7 @@ const Equipo = () => {;
     >
 
       <motion.div
-        className="relative w-4/6 lg:w-2/6 h-4/6 flex items-center justify-center p-4"
+        className="relative w-full h-full lg:w-2/6 lg:h-4/6 flex items-center justify-center p-4"
         initial={{ opacity: 0, x: -200 }}
         animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -200 }}
         transition={{ duration: 1, type: "spring" }}
