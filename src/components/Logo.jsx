@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import logo from "../assets/logo-removebg-preview.png";
+import logo from "../assets/image.png";
+import logoFixed from "../assets/logo-removebg-preview.png";
 
 const Logo = ({ fixed }) => {
   const [masChico, setMasChico] = useState("h-1/12 w-1/12");
@@ -14,7 +15,8 @@ const Logo = ({ fixed }) => {
 
   return (
     <div className={`${masChico} object-cover p-4 z-10`}>
-      <img src={logo} className="w-full object-cover h-full" alt="Logo" />
+      {!fixed && (<img src={logo} className="w-full object-cover h-full text-white" alt="Logo" />)}
+      {fixed && (<img src={logoFixed} className="w-full object-cover h-full text-white" alt="Logo" />)}
     </div>
   );
 };
