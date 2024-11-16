@@ -12,7 +12,7 @@ import logoMarca from '../assets/logoMarca.png';
 const Equipo = () => {; 
   const { ref, inView } = useInView({
     triggerOnce: false,  // Queremos que se repita cada vez que entre en vista
-    threshold: 0.5,  // Se activará cuando el 50% del componente esté visible
+    threshold: 0.1,  // Se activará cuando el 50% del componente esté visible
   });
 
   const flickingRef = useRef(null);
@@ -26,7 +26,7 @@ const Equipo = () => {;
   };
 
   return (
-    <section
+    <section id='equipo'
       className="flex items-center flex-col lg:flex-row lg:h-screen bg-cover bg-center bg-no-repeat w-full justify-around"
       style={{ backgroundImage: `url(${backgroundImage})` }} // Establece la imagen de fondo
     >

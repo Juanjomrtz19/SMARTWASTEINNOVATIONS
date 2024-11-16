@@ -4,6 +4,7 @@ import NavBarFixed from "./components/NavBarFixed";
 import Equipo from "./components/Equipo";
 import Footer from "./components/Footer";
 import NavBarMovil from "./components/NavBarMovil";
+import Contacto from "./components/Contacto";
 
 export default function App() {
   return (
@@ -44,6 +45,11 @@ export default function App() {
       </section>
 
       <Equipo />
+
+      <section id="contacto" className="lg:h-screen p-4 flex flex-col justify-center items-center">
+        <h1 className="text-xl font-bold p-4 pb-10">Envíanos un email</h1>
+        <Contacto />
+      </section>
       <Footer />
     </>
   );

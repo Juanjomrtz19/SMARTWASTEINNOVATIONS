@@ -38,17 +38,17 @@ const NavBarMovil = () => {
       >
         <ul className="space-y-4 p-4">
           <li>
-            <a href="#link1" className="text-black">
+            <a href="#contacto" className="text-black" onClick={() => setIsMenuOpen(!isMenuOpen)}>
               Contáctanos
             </a>
           </li>
           <li>
-            <a href="#link2" className="text-black">
+            <a href="#equipo" className="text-black" onClick={() => setIsMenuOpen(!isMenuOpen)}>
               Qué hacemos
             </a>
           </li>
           <li>
-            <a href="#link3" className="text-black">
+            <a href="#link3" className="text-black" onClick={() => setIsMenuOpen(!isMenuOpen)}>
               Trabaja con nosotros
             </a>
           </li>
